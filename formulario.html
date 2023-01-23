@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de estudiantes</title>
+</head>
+<body>
+    <form id="mentor-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="lastname">Apellido:</label>
+        <input type="text" id="lastname" name="lastname">
+        <br>
+        <label for="subject">Materia:</label>
+        <input type="text" id="subject" name="subject">
+        <br>
+        <label for="average">Promedio:</label>
+        <input type="text" id="average" name="average">
+        <br>
+        <p>
+            <input type="submit" value="Agregar">
+        </p>
+    </form>
+    
+    <form id="edit-form" style="display:none;">
+        <label for="name-edit">Nombre:</label>
+        <input type="text" id="name-edit" name="name-edit">
+        <br>
+        <label for="lastname-edit">Apellido:</label>
+        <input type="text" id="lastname-edit" name="lastname-edit">
+        <br>
+        <label for="subject-edit">Materia:</label>
+        <input type="text" id="subject-edit" name="subject-edit">
+        <br>
+        <label for="average-edit">Promedio:</label>
+        <input type="text" id="average-edit" name="average-edit">
+        <br>
+        <p>
+            <input type="button" value="Guardar Cambios" id="save-edit">
+            <input type="button" value="Cancelar" id="cancel-edit">
+        </p>
+    </form>
+    
+    <ul id="mentor-list"></ul>
+    
+    <script src="apiForm.js"></script>
+</body>
+</html>
